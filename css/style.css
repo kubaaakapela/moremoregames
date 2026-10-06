@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #10131a;
+    color: white;
+    min-height: 100vh;
+}
+
+/* HLAVIČKA */
+
+header {
+    height: 70px;
+    background: #171b25;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    border-bottom: 1px solid #292f3d;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #5ee17b;
+}
+
+/* ÚVOD */
+
+.hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        radial-gradient(circle at center, #26334d, #10131a 70%);
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #b8bfcc;
+    margin-bottom: 35px;
+}
+
+.main-button,
+.play-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.main-button {
+    background: #4dcc70;
+    padding: 15px 30px;
+}
+
+.main-button:hover {
+    background: #64ed88;
+    transform: translateY(-2px);
+}
+
+/* HRY */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+main h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+}
+
+/* KARTA HRY */
+
+.game-card {
+    background: #191e29;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #292f3d;
+    transition: 0.25s;
+}
+
+.game-card:hover {
+    transform: translateY(-7px);
+    border-color: #4dcc70;
+}
+
+.game-image {
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+}
+
+.city {
+    background: linear-gradient(135deg, #315b85, #1d304b);
+}
+
+.racing {
+    background: linear-gradient(135deg, #702c2c, #321b1b);
+}
+
+.clicker {
+    background: linear-gradient(135deg, #66572b, #302914);
+}
+
+.game-content {
+    padding: 22px;
+}
+
+.game-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.game-content p {
+    color: #aeb5c2;
+    min-height: 45px;
+    margin-bottom: 20px;
+}
+
+.play-button {
+    background: #4dcc70;
+    padding: 11px 25px;
+}
+
+.play-button:hover {
+    background: #64ed88;
+}
+
+/* PATIČKA */
+
+footer {
+    text-align: center;
+    padding: 35px;
+    color: #777f8d;
+    border-top: 1px solid #292f3d;
+    margin-top: 30px;
+}
+
+/* MOBIL */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+}
