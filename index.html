@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
@@ -9,72 +10,191 @@
 
 <body>
 
-<header>
-    <div class="logo">🎮 JAVOR GAMES</div>
+<header class="topbar">
+    <a href="index.html" class="logo">
+        <span>🎮</span> JAVOR GAMES
+    </a>
 
-    <nav>
-        <a href="index.html">Domů</a>
-        <a href="#hry">Hry</a>
-    </nav>
+```
+<nav>
+    <a href="#hry">Hry</a>
+    <a href="#o-webu">O webu</a>
+</nav>
+```
+
 </header>
 
 <section class="hero">
-    <div>
-        <h1>Vítej v JAVOR GAMES</h1>
-        <p>Hraj naše hry přímo v prohlížeči.</p>
-        <a class="main-button" href="#hry">PROHLÉDNOUT HRY</a>
+
+```
+<div class="hero-background">
+    <div class="cloud cloud1">☁️</div>
+    <div class="cloud cloud2">☁️</div>
+    <div class="star star1">✦</div>
+    <div class="star star2">✦</div>
+    <div class="star star3">✦</div>
+</div>
+
+<div class="hero-content">
+
+    <div class="hero-badge">
+        🎮 HERNÍ PORTÁL
     </div>
+
+    <h1>
+        VÍTEJ V<br>
+        <span>JAVOR GAMES</span>
+    </h1>
+
+    <p>
+        Hraj moje hry přímo v prohlížeči.
+        Nové hry budou postupně přibývat!
+    </p>
+
+    <a href="#hry" class="hero-button">
+        🚀 PROHLÉDNOUT HRY
+    </a>
+
+</div>
+```
+
 </section>
 
 <main id="hry">
 
-    <h2>🎮 Moje hry</h2>
-
-    <div class="games">
-
-        <!-- HRA 1 -->
-        <div class="game-card">
-            <div class="game-image city">🏙️</div>
-            <div class="game-content">
-                <h3>Buduj město</h3>
-                <p>Postav vlastní město a rozvíjej ho.</p>
-                <a href="hry/budovaci-hra.html" class="play-button">
-                    HRÁT
-                </a>
-            </div>
-        </div>
-
-        <!-- HRA 2 -->
-        <div class="game-card">
-            <div class="game-image racing">🏎️</div>
-            <div class="game-content">
-                <h3>Závody</h3>
-                <p>Vyhraj závod a překonej svůj rekord.</p>
-                <a href="hry/zavody.html" class="play-button">
-                    HRÁT
-                </a>
-            </div>
-        </div>
-
-        <!-- HRA 3 -->
-        <div class="game-card">
-            <div class="game-image clicker">🖱️</div>
-            <div class="game-content">
-                <h3>Clicker</h3>
-                <p>Klikej a získej co nejvíce bodů.</p>
-                <a href="hry/clicker.html" class="play-button">
-                    HRÁT
-                </a>
-            </div>
-        </div>
-
+```
+<div class="section-title">
+    <div>
+        <span>MOJE HRY</span>
+        <h2>🎮 Vyber si hru</h2>
     </div>
+
+    <div class="game-count">
+        3 HRY
+    </div>
+</div>
+
+<div class="games">
+
+    <article class="game-card city-card">
+
+        <div class="game-preview city-preview">
+
+            <div class="sun">☀️</div>
+            <div class="preview-tree tree1">🌲</div>
+            <div class="preview-tree tree2">🌳</div>
+
+            <div class="preview-house house1">🏠</div>
+            <div class="preview-house house2">🏡</div>
+
+            <div class="preview-road"></div>
+
+        </div>
+
+        <div class="game-info">
+
+            <div class="game-tag">STRATEGIE</div>
+
+            <h3>🏙️ Buduj město</h3>
+
+            <p>
+                Postav vlastní město, silnice,
+                domy a rozvíjej svou krajinu.
+            </p>
+
+            <a href="hry/budovaci-hra.html" class="game-button">
+                HRÁT HNED →
+            </a>
+
+        </div>
+
+    </article>
+
+
+    <article class="game-card race-card">
+
+        <div class="game-preview race-preview">
+
+            <div class="race-road"></div>
+            <div class="preview-car">🏎️</div>
+            <div class="race-line"></div>
+
+        </div>
+
+        <div class="game-info">
+
+            <div class="game-tag red">ZÁVODY</div>
+
+            <h3>🏎️ Závody</h3>
+
+            <p>
+                Usedni za volant a zkus
+                překonat svůj nejlepší čas.
+            </p>
+
+            <a href="hry/zavody.html" class="game-button red-button">
+                HRÁT HNED →
+            </a>
+
+        </div>
+
+    </article>
+
+
+    <article class="game-card click-card">
+
+        <div class="game-preview click-preview">
+
+            <div class="big-click">👆</div>
+            <div class="coin coin1">🪙</div>
+            <div class="coin coin2">⭐</div>
+            <div class="coin coin3">💰</div>
+
+        </div>
+
+        <div class="game-info">
+
+            <div class="game-tag yellow">ARKÁDA</div>
+
+            <h3>🖱️ Clicker</h3>
+
+            <p>
+                Klikej, získávej body a pokus se
+                vytvořit nový rekord.
+            </p>
+
+            <a href="hry/clicker.html" class="game-button yellow-button">
+                HRÁT HNED →
+            </a>
+
+        </div>
+
+    </article>
+
+</div>
+```
 
 </main>
 
+<section id="o-webu" class="about">
+
+```
+<div class="about-icon">🚀</div>
+
+<h2>JAVOR GAMES se rozrůstá!</h2>
+
+<p>
+    Tohle je začátek mého vlastního herního webu.
+    Postupně sem budou přibývat nové hry,
+    nové mapy a další funkce.
+</p>
+```
+
+</section>
+
 <footer>
-    <p>© 2026 JAVOR GAMES</p>
-    <p>Všechny hry vytvořené pro webový prohlížeč.</p>
+    <strong>🎮 JAVOR GAMES</strong>
+    <span>© 2026</span>
 </footer>
 
 </body>
